@@ -105,8 +105,6 @@ pipeline {
 									rm -rf webapp.war
 									mv *.war webapp.war
 										'''
-					}
-					step {
 						sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible01', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '''cd ~/ansible-files
 							git pull origin master
 							cd ansibleRoles
