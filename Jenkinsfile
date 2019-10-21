@@ -1,7 +1,7 @@
 def mvnHome
 def remote = [:]
     	remote.name = 'deploy'
-    	remote.host = '192.168.44.65'
+    	remote.host = '192.168.44.66'
     	remote.user = 'root'
     	remote.password = 'vagrant'
     	remote.allowAnyHosts = true
